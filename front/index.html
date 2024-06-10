@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
+    <a class="navbar-brand" href="#" style="margin-left:712px">Image Mixing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        
+      
+    </div>
+  </nav>
+  
+ 
+  <form class= "#" id="imageSubmit">
+    <div class="row">
+      <div class="col-md-3 mb-3" style="margin-left:375px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image1" class="form-label">Image 1</label>
+        <input class="form-control form-control-lg" type="file" id="image1" name="image1" accept="image/*" onchange="previewImage(this)" enctype="multipart/form-data" method="post">
+        <img class="img-thumbnail mt-2" id="image1-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+      </div>
+      <div class="col-md-3 mb-3" style="margin-left:20px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image2" class="form-label">Image 2</label>
+        <input class="form-control form-control-lg" type="file" id="image2" name="image2" accept="image/*" onchange="previewImage(this)" enctype="multipart/form-data" method="post">
+        <img class="img-thumbnail mt-2" id="image2-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-3" style="margin-left:375px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image3" class="form-label">Image 3</label>
+        <input class="form-control form-control-lg" type="file" id="image3" name="image3" accept="image/*" onchange="previewImage(this)">
+        <img class="img-thumbnail mt-2" id="image3-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+      </div>
+      <div class="col-md-3 mb-3" style="margin-left:20px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image4" class="form-label">Image 4</label>
+        <input class="form-control form-control-lg" type="file" id="image4" name="image4" accept="image/*" onchange="previewImage(this)">
+        <img class="img-thumbnail mt-2" id="image4-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-3" style="margin-left:375px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image5" class="form-label">Image 5</label>
+        <input class="form-control form-control-lg" type="file" id="image5" name="image5" accept="image/*" onchange="previewImage(this)">
+        <img class="img-thumbnail mt-2" id="image5-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+      </div>
+      <div class="col-md-3 mb-3" style="margin-left:20px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image6" class="form-label">Image 2</label>
+        <input class="form-control form-control-lg" type="file" id="image6" name="image6" accept="image/*" onchange="previewImage(this)">
+        <img class="img-thumbnail mt-2" id="image6-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+      </div>
+
+      </div>
+      <div class="row">
+      <div class="col-md-3 mb-3" style="margin-left:375px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image7" class="form-label">Image 7</label>
+        <input class="form-control form-control-lg" type="file" id="image7" name="image3" accept="image/*" onchange="previewImage(this)">
+        <img class="img-thumbnail mt-2" id="image7-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+      </div>
+      <div class="col-md-3 mb-3" style="margin-left:20px;  margin-top:20px;  border: 2px solid #ccc;  box-sizing: border-box">
+        <label for="image8" class="form-label">Image 8</label>
+        <input class="form-control form-control-lg" type="file" id="image8" name="image8" accept="image/*" onchange="previewImage(this)">
+        <img class="img-thumbnail mt-2" id="image8-preview" alt="Image Preview">
+        <button class="btn btn-danger" onclick="clearImage(this)">Clear</button>
+
+      </div>
+    </div>
+    <div class="text-center">
+    <button class="btn btn-primary" id="uploadButton">Upload Files</button>
+    </div>
+    <script>
+      src = "index.js"
+    </script>
+  </form>
+
+
+    <!--<form id="imageForm">
+        <input id="imageInput" type="file" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>/-->
+    
+    <button class="btn btn-sm btn-secondary" id="getButton" onclick="getImage()">Get</button>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
