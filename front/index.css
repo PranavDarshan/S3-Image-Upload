@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  
+  form > * {
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+.header {
+    background-color: #cccccc; /* Light gray header */
+    padding: 10px;
+    border-bottom: 1px solid #999999; /* Gray border */
+}
+.container {
+  display: flex;  /* Enables flexbox layout */
+  justify-content: center;  /* Centers content horizontally */
+}
+.nav {
+    list-style: none;
+    padding: 0;
+    margin-left: 1000px;
+    margin-right: 10px;;
+}
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    justify-content: center;
+  }
+
+.footer {
+    background-color: #cccccc; /* Light gray footer */
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #999999; /* Gray border */
+    margin-top: 20px;
+}
